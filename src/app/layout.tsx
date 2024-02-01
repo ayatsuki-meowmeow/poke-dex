@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { tv } from "tailwind-variants"
+import { tv } from "tailwind-variants";
+import { Header } from "@/components/layouts/Header";
+import { Footer } from "@/components/layouts/Footer";
+import { Body } from "@/components/layouts/Body";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={mainStyle()}>{children}</body>
+      <body className={mainStyle()}>
+        <Header />
+        <Body>{children}</Body>
+        <Footer />
+      </body>
     </html>
   );
 }
 
 const mainStyle = tv({
-  base: "bg-main",
+  base: "bg-main h-screen w-screen font-sans overflow-hidden",
 });

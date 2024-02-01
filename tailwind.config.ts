@@ -9,6 +9,12 @@ const config: Config = {
   theme: {
     colors: {
       main: "#f5f5f5",
+      header: "#ffffe0",
+      footer: "#d3d3d3",
+      link: {
+        default: "#0000ee",
+        hover: "#0000cc",
+      },
     },
     extend: {
       backgroundImage: {
