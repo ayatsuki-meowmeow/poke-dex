@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { tv } from "tailwind-variants";
-import { Header } from "@/components/layouts/Header";
-import { Footer } from "@/components/layouts/Footer";
-import { Body } from "@/components/layouts/Body";
+import { Header } from "@/components/layouts/Header/Header";
+import { Footer } from "@/components/layouts/Footer/Footer";
+import { Body } from "@/components/layouts/Content/Content";
 
 const inter = Inter({ subsets: ["latin"] });
 
