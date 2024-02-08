@@ -11,8 +11,8 @@ export const Logo = ({ children, className }: PropsWithChildren<Props>) => {
     <Link href="/">
       <h1 className={logoStyle({ className: className })}>{children}</h1>
     </Link>
-  )
-}
+  );
+};
 
 const logoStyle = tv({
   base: "text-2xl ml-4",
@@ -24,4 +24,3 @@ const logoStyle = tv({
   //   },
   // },
 });
-
