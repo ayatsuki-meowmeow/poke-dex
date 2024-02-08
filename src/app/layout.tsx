@@ -4,7 +4,7 @@ import "./globals.css";
 import { tv } from "tailwind-variants";
 import { Header } from "@/components/layouts/Header/Header";
 import { Footer } from "@/components/layouts/Footer/Footer";
-import { Body } from "@/components/layouts/Content/Content";
+import { Content } from "@/components/layouts/Content/Content";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={mainStyle()}>
         <Header />
-        <Body>{children}</Body>
+        <Content>{children}</Content>
         <Footer />
       </body>
     </html>

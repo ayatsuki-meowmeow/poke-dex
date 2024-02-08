@@ -1,10 +1,10 @@
 import { tv } from "tailwind-variants";
 import { PropsWithChildren } from "react";
 
-export const Body = ({ children }: PropsWithChildren) => {
-  return <div className={bodyStyle()}>{children}</div>;
+export const Content = ({ children }: PropsWithChildren) => {
+  return <div className={contentStyle()}>{children}</div>;
 };
 
-const bodyStyle = tv({
+const contentStyle = tv({
   base: "h-[90%] w-screen",
 });
